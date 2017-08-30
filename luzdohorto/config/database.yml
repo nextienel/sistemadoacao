@@ -23,10 +23,20 @@
 
 #Config to use on heroku
 
+# default: &default
+#   adapter: sqlite3
+#   pool: 5
+#   timeout: 5000
+
+  #Config to use on heroku
+
 default: &default
-  adapter: sqlite3
+  adapter: postgresql
   pool: 5
   timeout: 5000
+  host: localhost
+  username: postgres
+  password: root
 
 
 development:
